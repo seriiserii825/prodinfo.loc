@@ -1,8 +1,9 @@
 extends template
 
 block css
-    //- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
-    link(rel="stylesheet" type="text/css" href="assets/css/style.min.css")
+	//- link(rel="stylesheet" type="text/css" href="assets/i/svg/bg/css/sprite.css")
+	link(rel="stylesheet" type="text/css" href="assets/libs/fontawesome-free-5.10.1-web/css/all.min.css")
+	link(rel="stylesheet" type="text/css" href="assets/css/style.min.css")
 
 block title
     title Main
@@ -12,9 +13,14 @@ block content
     .hidden
         include ../../../build/assets/i/svg/inline/sprite.svg
 
-    include ../blocks/header
+	include ../blocks/header
+	include ../blocks/main-slider
+	include ../blocks/offers
+	include ../blocks/member
+	include ../blocks/directions
 
     include ../includes/scripts/ie-scripts
 
 block scripts
-    script(src="assets/libs/jquery-easy-scroll/jquery.easeScroll.js")
+	script(src="assets/libs/jquery-easy-scroll/jquery.easeScroll.js")
+	script(src="assets/libs/slick/slick/slick.min.js")

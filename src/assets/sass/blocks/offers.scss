@@ -1,0 +1,33 @@
+.offers__content {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 30px;
+	@media screen and (max-width: 960px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media screen and (max-width: 420px) {
+		display: block;
+	}
+}
+.offers__item {
+	text-align: center;
+	@media screen and (max-width: 420px) {
+		margin-bottom: 30px;
+	}
+
+	img {
+		display: table;
+		margin: 0 auto 40px;
+		width: 100px;
+	}
+}
+.offers__text {
+	h3 {
+		text-transform: uppercase;
+		font-weight: normal;
+		color: $accent;
+	}
+	p {
+		font-size: 14px;
+	}
+}

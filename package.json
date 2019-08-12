@@ -14,6 +14,7 @@
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
+    "@fortawesome/fontawesome-free": "^5.10.1",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
@@ -22,6 +23,7 @@
     "gulp-clean-css": "^4.2.0",
     "gulp-csso": "^3.0.1",
     "gulp-debug": "^4.0.0",
+    "gulp-dwebp": "^0.1.4",
     "gulp-if": "^2.0.2",
     "gulp-load-plugins": "^1.6.0",
     "gulp-newer": "^1.4.0",
