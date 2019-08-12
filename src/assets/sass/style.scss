@@ -15,7 +15,7 @@ body {
 	padding-bottom: 700px;
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 20px;
-	line-height: 30px;
+	line-height: 1.2;
 	color: $text-color;
 	background: white;
 }
@@ -73,5 +73,7 @@ p {
 
 @import "blocks/sandwitch";
 @import "blocks/header";
+@import "blocks/sections";
 @import "blocks/main-menu";
 @import "blocks/main-slider";
+@import "blocks/offers";
