@@ -28,6 +28,29 @@ $(function () {
 		});
 	};
 	sandwitch();
+	let mainSlider = function () {
+		$('#js-main-slider').slick({
+			arrows: true,
+			nextArrow: '<i class="fa fa-chevron-right fa-next" aria-hidden="true"></i>',
+			prevArrow: '<i class="fa fa-chevron-left fa-prev" aria-hidden="true"></i>',
+			responsive: [
+				{
+					breakpoint: 860,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}]
+		});
+	};
+	mainSlider();
 });
 
 

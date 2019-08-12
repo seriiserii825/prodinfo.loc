@@ -1,4 +1,5 @@
 @import 'partials/fonts';
+@import '../libs/fontawesome-free-5.10.1-web/scss/fontawesome';
 @import 'partials/variables';
 @import 'partials/mixins';
 @import '../libs/slick/slick/slick.scss';
@@ -73,3 +74,4 @@ p {
 @import "blocks/sandwitch";
 @import "blocks/header";
 @import "blocks/main-menu";
+@import "blocks/main-slider";
