@@ -15,7 +15,7 @@ body {
 	padding-bottom: 700px;
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 20px;
-	line-height: 1.2;
+	line-height: 1.4;
 	color: $text-color;
 	background: white;
 }
@@ -71,9 +71,87 @@ p {
 	max-width: 1215px;
 }
 
+.btn {
+	position: relative;
+	display: table;
+	margin: 0 auto;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: white;
+	background: $accent;
+	transition: all .4s;
+	z-index: 4;
+	&:hover {
+		background: $gulf-stream;
+	}
+}
+
 @import "blocks/sandwitch";
 @import "blocks/header";
 @import "blocks/sections";
 @import "blocks/main-menu";
 @import "blocks/main-slider";
 @import "blocks/offers";
+@import "blocks/member";
+
+//members
+
+.member {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,.4);
+	}
+}
+.member__content {
+	position: relative;
+	display: grid;
+	margin-bottom: 70px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	z-index: 3;
+	@media screen and (max-width: 1200px) {
+		grid-template-columns: repeat(2, 1fr);
+		margin: 0 auto 70px;
+		max-width: 620px;
+	}
+	@media screen and (max-width: 600px) {
+		display: block;
+	}
+
+
+}
+.member__item {
+	width: 290px;
+	height: 294px;
+	background: url('../i/members/members__item_bg.jpg');
+	@media screen and (max-width: 620px) {
+		margin: 0 auto 30px;
+	}
+
+
+	img {
+		position: relative;
+		top: 36px;
+		display: table;
+		margin: 0 auto 20px;
+	}
+}
+.member__text {
+	display: table;
+	margin: 0 auto;
+	padding: 20px;
+	padding-bottom: 12px;
+	width: 290px;
+	font-weight: bold;
+	text-align: center;
+	color: $martinique;
+}
+//members

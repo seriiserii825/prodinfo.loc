@@ -1,5 +1,19 @@
 .section {
 	padding: 40px 0 60px;
+	&.dark {
+		position: relative;
+		color: white;
+		z-index: 1;
+		.section__title::before,
+		.section__title::after {
+			background: white;
+		}
+		.section__subtitle {
+			position: relative;
+			color: white;
+			z-index: 3;
+		}
+	}
 	&__title {
 		position: relative;
 		display: table;
@@ -21,7 +35,7 @@
 			width: 60px;
 			height: 3px;
 			background: $martinique;
-			@media screen and (max-width: 420px) {
+			@media screen and (max-width: 750px) {
 				display: none;
 			}
 
