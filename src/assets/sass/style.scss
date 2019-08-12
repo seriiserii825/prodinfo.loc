@@ -15,8 +15,8 @@ body {
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 20px;
 	line-height: 30px;
-	color: $tundora;
-	background: darkblue;
+	color: $text-color;
+	background: white;
 }
 
 * {
@@ -66,5 +66,10 @@ p {
 
 .container {
 	margin: 0 auto;
-	width: 1200px;
+	padding: 0 15px;
+	max-width: 1215px;
 }
+
+@import "blocks/sandwitch";
+@import "blocks/header";
+@import "blocks/main-menu";

@@ -1,0 +1,42 @@
+.main-menu {
+	display: flex;
+	align-items: center;
+	@media screen and (min-width: 1100px) {
+		display: flex !important;
+	}
+	@media screen and (max-width: 1100px) {
+		position: relative;
+		display: none;
+		margin-left: 0;
+		z-index: 1;
+	}
+	@media screen and (max-width: 850px) {
+		margin-top: 24px;
+	}
+
+	&.active {
+		margin-right: 80px;
+		li {
+			border-bottom: 1px solid lightgray;
+		}
+	}
+	li {
+		padding: 20px 27px;
+		&.current-menu-item {
+			a {
+				color: $accent;
+			}
+		}
+	}
+	a {
+		display: block;
+		font-size: 14px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $text-color;
+		transition: all .4s ease;
+		&:hover {
+			color: $accent;
+		}
+	}
+}

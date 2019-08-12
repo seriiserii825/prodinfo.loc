@@ -1,0 +1,94 @@
+.main-header {
+	&-top {
+		padding: 10px 0;
+		font-size: 15px;
+		color: white;
+		background: $shark;
+
+		&__wrap {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			margin: 0 auto;
+			padding: 0 15px;
+			max-width: 1200px;
+			@media screen and (max-width: 630px) {
+				display: block;
+			}
+
+			& > * {
+				@media screen and (max-width: 630px) {
+					margin: 15px 0;
+				}
+
+				&:first-child {
+					@media screen and (max-width: 630px) {
+						margin-top: 0;
+					}
+				}
+
+				&:last-child {
+					@media screen and (max-width: 630px) {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+		}
+
+		a {
+			font-size: inherit;
+			text-decoration: none;
+			color: inherit;
+		}
+
+		picture {
+			margin-top: -2px;
+			margin-right: 6px;
+			height: 18px;
+		}
+
+		&__item {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	//top
+
+	&-bottom {
+		position: relative;
+		background: white;
+		z-index: 2;
+
+		&__wrap {
+			display: flex;
+			@media screen and (max-width: 850px) {
+				display: block;
+			}
+
+		}
+
+		.logo {
+			position: static;
+			display: block;
+		}
+
+		.flags-styled {
+			margin-top: 23px;
+			@media screen and (max-width: 1100px) {
+				margin-left: auto;
+				margin-right: 90px;
+			}
+
+			& > *{
+				&:not(:last-child){
+				    margin-right: 6px;
+				}
+			}
+			.flag.wpglobus-current-language {
+				border-bottom: 1px solid $accent;
+			}
+		}
+	}
+}
