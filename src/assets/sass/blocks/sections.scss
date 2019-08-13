@@ -18,12 +18,13 @@
 		position: relative;
 		display: table;
 		margin: 0 auto 50px;
+		@include raleway;
 		font-size: 35px;
 		font-weight: normal;
 		text-align: center;
 		text-transform: uppercase;
-		@media screen and (max-width: 420px) {
-			font-size: 24px;
+		@media screen and (max-width: 640px) {
+			font-size: 20px;
 		}
 
 		&::before,

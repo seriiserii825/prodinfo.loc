@@ -1,10 +1,14 @@
 .main-slider {
+
 	&__wrap {
 		position: relative;
 	}
 	&__item {
 		position: relative;
 		height: 600px;
+		@media screen and (max-width: 630px) {
+			height: 225px;
+		}
 		&::before {
 			content: '';
 			position: absolute;
@@ -48,14 +52,26 @@
 			margin-bottom: 20px;
 			font-size: 40px;
 			text-transform: uppercase;
+			@media screen and (max-width: 630px) {
+				font-size: 20px;
+			}
+
 		}
 		h4 {
 			font-size: 20px;
 			color: $accent;
+			@media screen and (max-width: 630px) {
+				font-size: 16px;
+			}
+
 		}
 		p {
 			font-size: 18px;
 			font-weight: bold;
+			@media screen and (max-width: 630px) {
+				font-size: 16px;
+			}
+
 		}
 		a {
 			text-transform: uppercase;

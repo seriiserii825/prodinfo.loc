@@ -4,7 +4,9 @@
 		font-size: 15px;
 		color: white;
 		background: $shark;
-
+		@media screen and (max-width: 630px) {
+			display: none;
+		}
 		&__wrap {
 			display: flex;
 			justify-content: space-around;
