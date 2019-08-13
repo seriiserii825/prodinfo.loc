@@ -62,3 +62,9 @@
 		color: $color;
 	}
 }
+@mixin robotothin {
+	font-family: 'Roboto Thin', sans-serif;
+}
+@mixin robotolight {
+	font-family: 'Roboto Light', sans-serif;
+}

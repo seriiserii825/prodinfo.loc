@@ -84,6 +84,10 @@ p {
 	&:hover {
 		background: $gulf-stream;
 	}
+	&.arrow {
+		padding-left: 30px;
+		padding-right: 46px;
+	}
 }
 
 @import "blocks/sandwitch";
@@ -160,14 +164,33 @@ p {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 5px;
+	margin-bottom: 70px;
+	@media screen and (max-width: 940px) {
+		grid-template-columns: repeat(3, 1fr);
+		//grid-row-gap: ;
+	}
+	@media screen and (max-width: 600px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media screen and (max-width: 370px) {
+		display: block;
+	}
+
+
 }
 .directions__item {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 260px;
+	color: white;
 	background-size: cover;
 	z-index: 1;
+	@media screen and (max-width: 370px) {
+		margin-bottom: 10px;
+	}
+
 	&::after {
 		content: '';
 		position: absolute;
@@ -180,9 +203,13 @@ p {
 	}
 }
 .directions__center {
-	//position: absolute;
-	//top: 50%;
-	//left: 50%;
-	//transform: translate(-50%, -50%);
+	position: relative;
+	@include robotolight;
+	font-size: 26px;
+	text-align: center;
+	z-index: 4;
+	h4 {
+		margin-bottom: 20px;
+	}
 }
 //directions
