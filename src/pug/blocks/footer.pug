@@ -1,0 +1,38 @@
+footer.footer(style="background-image: url('assets/i/footer-bg.jpg')")
+	.container
+		.footer-top
+			.footer-contacts
+				h2 Contacte
+				ul.footer-list.address
+					li.address__item
+						picture
+							source(type="image/webp" srcset="assets/i/icons/phone.webp")
+							img(src="assets/i/icons/phone.png" alt="")
+						a(href="tel:+37368365000")  +(373) 68365000
+
+					li.address__item
+						picture
+							source(type="image/webp" srcset="assets/i/icons/mail.webp")
+							img(src="assets/i/icons/mail.png" alt="")
+						a(href="mailto:prodinfo.md@gmail.com") prodinfo.md@gmail.com
+
+					li.address__item
+						picture
+							source(type="image/webp" srcset="assets/i/icons/map.webp")
+							img(src="assets/i/icons/map.png" alt="")
+						a(href="#")  Chifinau, bd. Mircea cel BatrTn 8/1
+
+			.footer-form
+				.form-flex
+					.form-half
+						input(type="text" name="field-name" required="required" placeholder="Numele/Prenumele*")
+					.form-half
+						input(type="text" name="field-email" required="required" placeholder="Email*")
+				.form-full
+					textarea Mesajul Dvs.
+
+				input.btn(type="submit" value="Trimite")
+
+		.footer-bottom
+			.map
+				img(src="assets/i/map.jpg")
