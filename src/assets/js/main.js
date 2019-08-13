@@ -45,6 +45,41 @@ $(function () {
 		});
 	};
 	ideaSlider();
+
+	let partnersSlider = function () {
+		$('#js-partners-slider').slick({
+			dots: true,
+			arrows: false,
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			responsive: [
+				{
+					breakpoint: 1100,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+
+			]
+
+		});
+		$('.partners-slider-wrap .slider-arrow--left').click(function(){
+			$('#js-partners-slider').slick('slickNext');
+		});
+
+		$('.partners-slider-wrap .slider-arrow--right').click(function(){
+			$('#js-partners-slider').slick('slickPrev');
+		});
+	};
+	partnersSlider();
 });
 
 
