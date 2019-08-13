@@ -240,6 +240,10 @@ p {
 		@media screen and (max-width: 630px) {
 			display: none;
 		}
+		.fas {
+			margin-right: 10px;
+			color: $accent;
+		}
 
 		&__wrap {
 			display: flex;
@@ -951,6 +955,10 @@ p {
 		display: flex;
 		align-items: center;
 		margin-bottom: 14px;
+	}
+	.fas {
+		margin-right: 10px;
+		color: $accent;
 	}
 	img {
 		width: 18px;
