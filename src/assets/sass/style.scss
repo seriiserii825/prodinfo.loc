@@ -21,7 +21,9 @@ body {
 	@media screen and (max-width: 630px) {
 		font-size: 16px;
 	}
-
+}
+.accent {
+	color: $accent;
 }
 
 * {
@@ -1007,5 +1009,139 @@ p {
 .footer-bottom {
 	text-align: center;
 }
-
 //footer
+//page_intro
+.page-intro {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 224px;
+	color: white;
+	background-size: cover;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0,0,0,.6);
+		z-index: 1;
+	}
+	.section__title {
+		position: relative;
+		margin-bottom: 0;
+		font-weight: bold;
+		z-index: 3;
+		&::before,
+		&::after {
+			background: white;
+		}
+	}
+}
+//page_intro
+//advantage__description
+.advantage__description {
+	padding: 34px 0;
+	margin: 0 auto;
+	max-width: 604px;
+	text-align: center;
+	background: white;
+}
+.advantage__item {
+	padding: 20px 0 40px;
+	&.dark {
+		background: $alabaster;
+	}
+	&.reverse {
+		.advantage__block {
+			grid-template-columns: 1fr 400px;
+		}
+		.advantage__img {
+			order: 2;
+		}
+		.advantage__text {
+			order: 1;
+		}
+	}
+	.section__title {
+		&::before,
+		&::after {
+			background: $accent;
+		}
+	}
+}
+.advantage__block {
+	display: grid;
+	grid-template-columns: 400px 1fr;
+	grid-gap: 30px;
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 960px;
+	@media screen and (max-width: 770px) {
+		display: block;
+	}
+}
+.advantage__img {
+	@media screen and (max-width: 770px) {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+}
+.advantage__text {
+	@media screen and (max-width: 770px) {
+		margin: 0 auto;
+		max-width: 600px;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+	li {
+		position: relative;
+		margin-bottom: 14px;
+		padding-left: 20px;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 12px;
+			width: 8px;
+			height: 8px;
+			background: $accent;
+			border-radius: 50%;
+		}
+	}
+}
+//advantage__description
+//benefice
+.benefice {
+	padding: 70px 0;
+	background: $alabaster;
+}
+.benefice__content {
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 0 15px;
+	display: flex;
+	justify-content: space-between;
+	@media screen and (max-width: 740px) {
+		display: block;
+		text-align: center;
+	}
+	p {
+		font-weight: bold;
+		@media screen and (max-width: 740px) {
+			margin-bottom: 30px;
+		}
+
+	}
+	.btn {
+		flex: 0 0 280px;
+		text-align: center;
+	}
+}
+//benefice
+
