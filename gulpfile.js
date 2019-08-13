@@ -2,7 +2,6 @@
 
 let gulp = require('gulp'),
 	//css
-	dwebp = require('gulp-dwebp'),
 	// stylus = require('gulp-stylus'),
 	sass = require('gulp-sass'),
 	cleanCSS = require('gulp-clean-css'),
@@ -38,12 +37,6 @@ let gulp = require('gulp'),
 	rimraf = require("rimraf"),
 	gulpif = require("gulp-if"),
 	replace = require('gulp-replace');
-
-gulp.task('dwebp', function () {
-	gulp.src('src/assets/i/webp/**/*.*')
-		.pipe(dwebp())
-		.pipe(gulp.dest('src/assets/i/png/**/*.*'));
-});
 
 gulp.task('cssmin',() => {
   return gulp.src('css/**/*.*')
