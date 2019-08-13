@@ -23,11 +23,11 @@ $(function () {
 				$(this).toggleClass('sandwitch--active');
 				let mainMenu = $('#js-main-menu');
 				mainMenu.toggleClass('active');
-				mainMenu.slideToggle();
 			}
 		});
 	};
 	sandwitch();
+
 	let mainSlider = function () {
 		let slider = $('#js-main-slider');
 		slider.slick({
