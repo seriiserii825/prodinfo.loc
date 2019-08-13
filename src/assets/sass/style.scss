@@ -194,9 +194,21 @@ p {
 	}
 }
 
+.sandwitch__line--bottom {
+	top: 12px;
+}
+
+.sandwitch__line--top {
+	top: 0;
+}
+
 .sandwitch--active .sandwitch__line--top {
 	top: 6px;
 	transform: rotate(45deg);
+}
+
+.sandwitch__line--middle {
+	top: 6px;
 }
 
 .sandwitch--active .sandwitch__line--middle {
@@ -218,17 +230,6 @@ p {
 	background-color: black;
 }
 
-.sandwitch__line--top {
-	top: 0;
-}
-
-.sandwitch__line--middle {
-	top: 6px;
-}
-
-.sandwitch__line--bottom {
-	top: 12px;
-}
 
 .main-header {
 	&-top {
