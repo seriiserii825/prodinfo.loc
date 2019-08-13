@@ -88,6 +88,21 @@ $(function () {
 		});
 	};
 	partnersSlider();
+
+	let scrollToAbout = function () {
+		let about = $('.offers');
+		let aboutOffsetTop = about.offset().top;
+		$('#js-main-menu li a').on('click', function (e) {
+			let href = $(this).attr('href');
+			if(href === '#js-offers'){
+				e.preventDefault();
+				$('html, body').animate({
+					scrollTop: aboutOffsetTop
+				}, 1000);
+			}
+		});
+	};
+	scrollToAbout();
 });
 
 
