@@ -484,34 +484,26 @@ p {
 			color: white;
 		}
 	}
-	.fa {
-		font-size: 80px;
-		position: absolute;
-		width: 20px;
-		height: 20px;
-		bottom: 54%;
-		color: $accent;
-		border: 0;
-		background: none;
-		cursor: pointer;
-		z-index: 1000;
-		transition: .6s ease;
-		opacity: .6;
-		@media screen and (max-width: 860px) {
-			display: none !important;
+}
+.main-slider-arrows {
+	.slider-arrow {
+		@media screen and (max-width: 1140px) {
+			display: none;
 		}
 
-		&:hover {
-			opacity: 1;
+		z-index: 10000;
+		svg {
+			width: 74px;
+			fill: white;
 		}
 	}
+	.slider-arrow--left {
+		left: 80px;
+	}
 
-	.fa-prev {
-		left: 80px; }
-
-	.fa-next {
+	.slider-arrow--right {
 		right: 80px;
-		text-align: right; }
+	}
 }
 .offers__content {
 	display: grid;

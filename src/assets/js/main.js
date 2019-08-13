@@ -29,10 +29,17 @@ $(function () {
 	};
 	sandwitch();
 	let mainSlider = function () {
-		$('#js-main-slider').slick({
-			arrows: true,
-			nextArrow: '<i class="fa fa-chevron-right fa-next" aria-hidden="true"></i>',
-			prevArrow: '<i class="fa fa-chevron-left fa-prev" aria-hidden="true"></i>',
+		let slider = $('#js-main-slider');
+		slider.slick({
+			arrows: false,
+		});
+
+		$('.main-slider-arrows .slider-arrow--left').click(function(){
+			slider.slick('slickNext');
+		});
+
+		$('.main-slider-arrows .slider-arrow--right').click(function(){
+			slider.slick('slickPrev');
 		});
 	};
 	mainSlider();
@@ -47,7 +54,8 @@ $(function () {
 	ideaSlider();
 
 	let partnersSlider = function () {
-		$('#js-partners-slider').slick({
+		let slider = $('#js-partners-slider');
+		slider.slick({
 			dots: true,
 			arrows: false,
 			slidesToShow: 3,
@@ -72,11 +80,11 @@ $(function () {
 
 		});
 		$('.partners-slider-wrap .slider-arrow--left').click(function(){
-			$('#js-partners-slider').slick('slickNext');
+			slider.slick('slickNext');
 		});
 
 		$('.partners-slider-wrap .slider-arrow--right').click(function(){
-			$('#js-partners-slider').slick('slickPrev');
+			slider.slick('slickPrev');
 		});
 	};
 	partnersSlider();
