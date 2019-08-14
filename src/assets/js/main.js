@@ -107,6 +107,19 @@ $(function () {
 
 	};
 	scrollToAbout();
+
+	let showLikes = function(){
+		let newsLike = $('.news__like svg');
+
+		newsLike.on('click', function () {
+			if($(this).hasClass('active')){
+				return false;
+			}
+			$(this).addClass('active');
+			$('.news__like-number').html('1');
+		});
+	};
+	showLikes();
 });
 
 
