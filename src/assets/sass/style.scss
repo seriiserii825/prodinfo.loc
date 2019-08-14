@@ -1196,4 +1196,49 @@ p {
 }
 
 //benefice
+//our-members
+.our-members-content {
+	margin: 0 auto;
+	padding: 40px 15px;
+	max-width: 960px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+	font-size: 16px;
+	@media screen and (max-width: 850px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media screen and (max-width: 600px) {
+		display: block;
+	}
+	a {
+		color: inherit;
+		transition: all .4s;
+		&:hover {
+			text-decoration: underline;
+			color: $accent;
+		}
+		&[href^="mailto"],
+		&[href^="tel"] {
+			text-decoration: none;
+		}
+	}
+}
+.our-members__item {
+	@media screen and (max-width: 600px) {
+		margin: 0 auto 30px;
+		max-width: 400px;
+	}
+
+}
+.our-members__img {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	height: 100px;
+	picture {
+		margin-top: auto;
+	}
+}
+//our-members
 
